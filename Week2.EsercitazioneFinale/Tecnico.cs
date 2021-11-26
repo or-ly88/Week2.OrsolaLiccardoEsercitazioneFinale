@@ -6,14 +6,43 @@ using System.Threading.Tasks;
 
 namespace Week2.EsercitazioneFinale
 {
-    internal class Tecnico:Impiegato
+    internal class Tecnico : Impiegato
     {
+        public string Skill { get; set; }
 
+        
         //il tecnico condivide un metodo con impiegato "Calcolo stipendio"
-        public int[] oreLavorate = new int[0];
-        public double[] pagaOraria = new double[0];
-        public double[] calcoloStipendio = new double[0];
+        public override void CalcoloStipendioMensile()
+        {
+            base.CalcoloStipendioMensile();
+        }
 
-        //Console.WriteLine(calcoloStipendio[i]= (Convert.ToInt(oreLavorate[i])* (Convert.ToDouble(pagaOraria[i]));
+        
+
+        
+    
+ 
+
+
+
     }
+
+
 }
+
+
+
+
+
+
+
+
+    
+        
+
+        
+  
+}
+
+
+//Console.WriteLine(calcoloStipendio[i]= (Convert.ToInt(oreLavorate[i])* (Convert.ToDouble(pagaOraria[i]));

@@ -1,17 +1,32 @@
-﻿namespace Week2.EsercitazioneFinale
+﻿using Week2.EsercitazioneFinale;
+internal class Menu
 {
-
-    static void Main(string[] args)
+    public static void Start()
     {
-
-        Person impiegato = new Person();
-        //impiegato.
-
-
-
+        char choice = Console.ReadKey().KeyChar;
     }
 
 
+}
+
+
+
+namespace Week2.EsercitazioneFinale
+{
+
+
+
+
+
+
+    static void Main(string[] args)
+    { 
+    }
+
+        
+
+       
+}
 
 
 
@@ -19,6 +34,11 @@
 
 
 
+
+
+
+
+}
 
 
 }

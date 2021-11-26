@@ -8,17 +8,17 @@ namespace Week2.EsercitazioneFinale
 {
     internal class Person
     {
-        //dichiaro le variabili è le imposto come pubbliche
-         public string nome;
-         public string cognome;
-         public string codiceFiscale;
-
+        //dichiaro le variabili è le imposto come pubbliche;nome,cogmome,codice fiscale.
+        private string nome;
+        private string cognome;
+        private string codiceFiscale;
+       
 
         //Scrivo le proprietà delle variabili
         public string Nome
         {
             get { return nome; }
-            set{ nome = value; }
+            set { nome = value; }
         }
         public string Cognome
         {
@@ -31,24 +31,28 @@ namespace Week2.EsercitazioneFinale
             get { return codiceFiscale; }
             set { codiceFiscale = value; }
         }
-
-        private int Age { get; set; } 
-
-        public Person()
+        public Person() { }
+        public Person(string nome, string cognome, string codiceFiscale)
         {
+            Nome = nome;
+            Cognome = cognome;
+            CodiceFiscale = codiceFiscale;
 
         }
-        public Person(string firstName, string lastName)
-        {
-            FirstName = firstName;
-            LastName = lastName;
-        }
-
         public virtual void PrintInfo()
         {
-            Console.WriteLine($"{FirstName} {LastName}");
+            Console.WriteLine($"{ Nome} { Cognome} { CodiceFiscale}");
         }
-    }
 
-}
+     }
+
+
+
+
+}    
+
+
+    
+
+
            
